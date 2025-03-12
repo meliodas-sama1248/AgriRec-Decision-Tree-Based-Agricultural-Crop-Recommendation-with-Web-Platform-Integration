@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrirec - Crop Recommendation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0ca730;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0c5e1d;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Crop Recommendation System</h1>
+    <form method="POST" action="/predict">
+        <label for="N">Nitrogen (N)</label>
+        <input type="number" name="N" id="N" required>
+
+        <label for="P">Phosphorous (P)</label>
+        <input type="number" name="P" id="P" required>
+
+        <label for="K">Potassium (K)</label>
+        <input type="number" name="K" id="K" required>
+
+        <label for="temperature">Temperature (°C)</label>
+        <input type="number" name="temperature" id="temperature" required>
+
+        <label for="humidity">Humidity (%)</label>
+        <input type="number" name="humidity" id="humidity" required>
+
+        <label for="ph">Soil pH</label>
+        <input type="number" name="ph" id="ph" required>
+
+        <label for="rainfall">Rainfall (mm)</label>
+        <input type="number" name="rainfall" id="rainfall" required>
+
+        <button type="submit">Predict Crop</button>
+    </form>
+
+    {% if prediction %}
+    <div class="result">
+        <h3>Recommended Crop: {{ prediction }}</h3>
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
