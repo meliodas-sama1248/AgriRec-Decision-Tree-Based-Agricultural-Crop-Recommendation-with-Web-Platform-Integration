@@ -1,29 +1,69 @@
-# AgriRec-Decision-Tree-Based-Agricultural-Crop-Recommendation-with-Web-Platform-Integration
+# 🌾 AgriRec - Decision Tree Based Agricultural Crop Recommendation System with Web Platform Integration
 
-In the pursuit of sustainable and enhanced 
-agriculture, with growing food demands and environmental 
-challenges, precision agriculture has become a pivotal 
-innovation to optimize crop production. This research presents 
-AgriRec, an AI-powered web platform designed to deliver 
-precise crop cultivation using machine learning. The following 
-study is based on the Crop Recommendation dataset, which 
-comprises 2,200 records with eight agronomic factors consisting 
-of the soil nutrients and environmental factors such as Nitrogen 
-(N), Phosphorus (P), and Potassium (K) along with pH of soil, 
-temperature, humidity and rainfall. The dataset also has a label 
-column, providing the different crop types. This study uses data 
-preprocessing techniques like filling missing values and 
-removing duplicates to ensure consistency. Different machine 
-learning models including Support Vector Machine (SVM), K
-Nearest Neighbors (KNN), Decision Tree and Logistic 
-Regression, are utilized and evaluated using performance 
-metrics such as accuracy, recall, precision and F1-Score. Among 
-these four, Decision Tree model achieved the highest accuracy of 
-98.18%. Thus, the optimal model, Decision Tree is deployed in a 
-web-interface using HTML, CSS and JavaScript facilitating 
-user engagement to get real-time inputs and predictions. The 
-following study showcases the considerable capability of 
-machine learning in revolutionizing traditional farming 
-practice, offering farmers with a practical tool to improve their 
-crop yield and decision-making, promoting sustainable farming 
-methods to mitigate food needs. 
+AgriRec is an AI-powered web platform designed to enhance modern agriculture by providing precise crop recommendations using machine learning. With rising food demands and environmental challenges, this system aims to optimize crop production through data-driven decisions.
+
+---
+
+## 📌 Project Overview
+
+In the pursuit of sustainable agriculture and improved crop yield, AgriRec leverages machine learning techniques to recommend the most suitable crops based on various soil and environmental conditions. This system is built using a web interface to allow farmers and users to input their data and receive real-time crop suggestions.
+
+---
+
+## 🌿 Dataset Information
+
+- *Source:* Crop Recommendation Dataset  
+- *Total Records:* 2,200 entries  
+- *Features:*
+  - Nitrogen (N)
+  - Phosphorus (P)
+  - Potassium (K)
+  - Temperature
+  - Humidity
+  - pH
+  - Rainfall
+  - Crop Label (Target variable)
+
+Dataset preprocessing included:
+- Filling missing values
+- Removing duplicate records
+
+---
+
+## 🤖 Machine Learning Models Used
+
+- Support Vector Machine (SVM)
+- K-Nearest Neighbors (KNN)
+- Logistic Regression
+- ✅ Decision Tree Classifier (Best Model)
+
+### 🔍 Model Evaluation
+- *Best Model:* Decision Tree Classifier
+- *Accuracy:* 98.18%
+- *Metrics Used:* Accuracy, Precision, Recall, F1-Score
+
+---
+
+## 💻 Tech Stack
+
+- Python (scikit-learn, pandas, numpy)
+- Flask (backend framework)
+- HTML, CSS, JavaScript (frontend interface)
+- Jupyter Notebook / Google Colab (model development)
+
+---
+
+## 🚀 Features
+
+- User-friendly web interface for data input
+- Real-time crop prediction
+- Backend ML model integrated with Flask
+- Simple frontend using HTML + CSS + JavaScript
+
+---
+## 🙌 Acknowledgements
+UCI Machine Learning Repository
+Python, Scikit-learn, Flask, and Open-source community
+
+---
+🌱 Let's Empower Farmers with Data!
