@@ -67,3 +67,8 @@ Python, Scikit-learn, Flask, and Open-source community
 
 ---
 🌱 Let's Empower Farmers with Data!
+
+## 📜 License
+This project is licensed under the [MIT License](./LICENSE).
+
+----
